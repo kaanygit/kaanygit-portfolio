@@ -1,0 +1,8 @@
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    column-gap: 20px;
+    row-gap: 50px;
+    margin: 15px 25px;
+    overflow: hidden;
+}

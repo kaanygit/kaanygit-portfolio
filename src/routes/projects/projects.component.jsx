@@ -1,27 +1,18 @@
-import { useContext,Fragment } from 'react';
-import { ProjectsContext } from '../../context/get_projects.context';
-import ProjectsCard from '../../components/projects/projects_card.component';
-import { firestoreGetProjects } from '../../utils/firebase/firebase';
-import './projects.style.scss';
+import { useContext } from 'react';
+import {ProjectsContext} from '../../context/project.context';
+import ProjectsCard from '../../components/projects_card/projects_card.component';
+import './projects.style.css';
 
 
 const Projets=()=>{
-  const {projectsMap}=useContext(ProjectsContext);
-  return(
-      <Fragment>
-        {
-          Object.keys(projectsMap).map(title=>(
-            <Fragment key={title}>
-              <h2>{title}</h2>
-              <div className='projects-container'>
-                {Array.isArray(projectsMap[title]) && projectsMap[title].map((project)=>(
-                  <ProjectsCard key={project.id} project={project}/>
-                ))}
-              </div>
-            </Fragment>
-          ))};
-      </Fragment>
-  );
+  const  {projects} =useContext(ProjectsContext);
+  return (
+      <div className='projects-container'>
+        {projects.map((project)=>(
+          <ProjectsCard key={project.id} project={project}/>
+        ))}
+      </div>
+  )
 };
 
 export default Projets;
