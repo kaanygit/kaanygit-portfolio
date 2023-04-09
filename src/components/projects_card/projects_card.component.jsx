@@ -3,28 +3,25 @@ import {FiGithub} from 'react-icons/fi';
 import {SiWebflow} from 'react-icons/si';
 import {FaReact} from 'react-icons/fa';
 
-import './projects_card.style.css';
+import {ProjectCardContainer,ImgUrl,WebLink,GitLink,Footer,ImageLinks,ProjectName,GithubLink,WebsiteLink,ReactIcon} from './projects_card.style.jsx';
 
 const ProjectsCard=({project})=>{
     const {name,imageUrl,lang,website,githubLink}=project;
     return  (
-        <div className='project-card-continer'>
-            <div className='img-around'>
-                <img src={imageUrl} alt={`${name}`} />
-                <div className='div-name'>
-                    <span className='span-name'>{name.toUpperCase()}</span>
-                </div>
-                <div className='denme'>
-                    <div className='footer'>
-                        <span className='name'><h1><FaReact/></h1></span>
-                    </div>
-                    <div className='git-web'>
-                        <span className='link'><Link to={`${website}`}><h1><FiGithub/></h1></Link></span>
-                        <span className='link'><Link to={`${githubLink}`}><h1><SiWebflow/></h1></Link></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ProjectCardContainer>
+                <ImageLinks>
+                    <ImgUrl src={imageUrl} alt={`${name}`} />
+                    <GitLink>
+                        <WebLink><Link to={`${githubLink}`}><GithubLink><FiGithub/></GithubLink></Link></WebLink>
+                        <WebLink><Link to={`${website}`}><WebsiteLink><SiWebflow/></WebsiteLink></Link></WebLink>
+                    </GitLink>
+                </ImageLinks>
+                <Footer>
+                    <ProjectName>{name.toUpperCase()}</ProjectName>
+                    <ReactIcon><h1><FaReact/></h1></ReactIcon>
+                </Footer>
+        </ProjectCardContainer>
+
     )
 };
 

@@ -5,15 +5,15 @@
     "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
     "lang": "react",
     "website": "https://www.google.com/",
-    "githubLink": "https://www.google.com/"
+    "githubLink": "https://github.com/kaanygit/Calculator-React.Js"
   },
   {
     "id": 2,
-    "name": "Counter Application",
+    "name": "Recipe App",
     "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
     "lang": "react",
     "website": "https://www.google.com/",
-    "githubLink": "https://www.google.com/"
+    "githubLink": "https://github.com/kaanygit/RecideApp-React.js"
   },
   {
     "id": 3,
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "name": "Project 9",
+    "name": "Movie Review App",
     "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
     "lang": "react",
     "website": "https://www.google.com/",
