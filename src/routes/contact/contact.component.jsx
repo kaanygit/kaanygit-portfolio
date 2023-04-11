@@ -36,7 +36,7 @@ const Contact=()=>{
                         Email:<FormInput type='email' value={email} onChange={handleEmailSubmit} required />
                     </ContactPageLabel>
                     <ContactPageLabel>
-                        Name:<FormTextArea value={message} onChange={handleTextSubmit} required/>
+                        Message:<FormTextArea value={message} onChange={handleTextSubmit} minLength={10} maxLength={200} required/>
                     </ContactPageLabel>
                     <FormButton type='submit' >Send</FormButton>
                 </ContactForm>
