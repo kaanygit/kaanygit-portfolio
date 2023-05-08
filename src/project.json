@@ -33,11 +33,11 @@
   },
   {
     "id": 5,
-    "name": "Music Player",
+    "name": "Harmoniyo",
     "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
     "lang": "react",
     "website": "https://www.google.com/",
-    "githubLink": "https://www.google.com/"
+    "githubLink": "https://github.com/kaanygit/harmoniyo"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
     "lang": "react",
     "website": "https://www.google.com/",
-    "githubLink": "https://www.google.com/"
+    "githubLink": "https://github.com/kaanygit/weather-app-react"
   },
   {
     "id": 7,
