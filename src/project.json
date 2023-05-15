@@ -25,11 +25,11 @@
   },
   {
     "id": 4,
-    "name": "Whatsapp Clone",
+    "name": "VividChat",
     "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
     "lang": "react",
     "website": "https://www.google.com/",
-    "githubLink": "https://www.google.com/"
+    "githubLink": "https://github.com/kaanygit/VividChat"
   },
   {
     "id": 5,
@@ -70,5 +70,13 @@
     "lang": "react",
     "website": "https://www.google.com/",
     "githubLink": "https://www.google.com/"
+  },
+  {
+    "id": 10,
+    "name": "Password Generator App",
+    "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+    "lang": "react",
+    "website": "https://www.google.com/",
+    "githubLink": "https://github.com/kaanygit/password-generator"
   }
 ]
