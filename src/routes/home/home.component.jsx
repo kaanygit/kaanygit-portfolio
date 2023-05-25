@@ -1,6 +1,5 @@
 import Directory from '../../components/directory/directory.component';
 import {Outlet} from 'react-router';
-import './home.style.css';
 
 const Home =()=>{
     return (

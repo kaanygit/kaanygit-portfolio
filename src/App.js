@@ -1,10 +1,11 @@
+import {Routes,Route} from 'react-router-dom';
 import Home from './routes/home/home.component.jsx';
 import Navigation from './routes/navigation/navigation.component.jsx';
 import Projects from './routes/projects/projects.component.jsx';
 import Contact from './routes/contact/contact.component.jsx';
 import About from './routes/about/about.component.jsx';
 
-import {Routes,Route} from 'react-router-dom';
+import 'tailwindcss/tailwind.css';
 
 const App=()=>{
   return(

@@ -1,119 +1,9 @@
-/* .page{
-    display: flex;
-    max-width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10%;
-}
-.col{
-    max-width: 100%;
-    z-index: 2;
-}
-.hello{
-    display: block;
-    position: relative;
-    font-size: 35px;
-    letter-spacing: 5px;
-    color:#3d535f;
-}
-.im{
-    display: block;
-    font-size: 6.2em;
-    font-weight: 800;
-    color:#181d23;
-}
-.nameSurname{
-    color: #022b63;
-    text-transform: capitalize;
-}
-.content{
-    display: block;
-    width: 90%;
-    font-size: 1.5em;
-    color: #000;
-}
 
 
-.buttons{
-    width: 100%;
-    position: relative;
-    left: 150px;
-}
-button{
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 500;
-    color: #fff;
-    background-color: #3d535f;
-    padding: 8px 14px;
-    margin: 40px 5px;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
-}
-button:hover{
-    background-color:#3d535f;
-}
-
-
-
-.content,.typing-css{
-    animation: typing 3s steps(200),blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-}
-@keyframes typing{
-    from{
-        width: 0;
-    }
-}
-@keyframes blink{
-    50%{
-        border-color: transparent;
-    }
-}
-.icons{
-    display: flex;
-    align-items:flex-end;
-    justify-content: flex-start;
-}
-.icons h1{
-    padding: 5px 10px 0px 10px;
-}
-.my-image{
-    justify-content: center;
-    align-items: center;
-    width: 30em;
-    flex: 1;
-}
-.my-image img{
-    width: 30em;
-    height: auto;
-} */
-
-
-/* .my-image{
-    padding-left: 30px;
-    max-width: 100%;
-    margin: 0 auto;
-    position: relative;;
-}
-.my-image-src{ 
-    height: auto;
-    border-radius: 50%;
-    width: 30em;
-    border: 10px solid #fff;
-    display: block;
-    height: auto; 
-}  */
-
-section{
+/* section{
     padding: 100px 12%;
-}
-.home{
+} */
+/* .home{
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -122,36 +12,36 @@ section{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     grid-gap: 4rem;   
-}
+} */
 
-.home-text h1{
+/* .home-text h1{
     margin: 10px 0px 25px;
     font-size: 45px;
     line-height: 1;
     font-weight: 500;
     letter-spacing: 5px;
     text-transform: capitalize;
-}
-.im{
+} */
+/* .im{
     color: black;
-}
-.nameSurname{
+} */
+/* .nameSurname{
     color: #022b63;
-}
+} */
 
 .home-text h5{
     margin-bottom: 23px;
     font-size: 19px;
     font-weight: 500;
 }
-.home-text .hello{
+/* .home-text .hello{
     font-weight: 300;
     display: block;
     font-size: 25px;
     letter-spacing: 5px;
     color:#3d535f;
-}
-.home-text p{
+} */
+/* .home-text p{
     line-height: 28px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -161,12 +51,14 @@ section{
     animation: typing 3s steps(150),blink .5s step-end infinite alternate;
     overflow:hidden;
     white-space: nowrap;
-}
-@keyframes typing{
+} */
+/* @keyframes typing{
     from{
         width: 0;
     }
-}
+} */
+
+/* 
 .icons h1{
     width: 35px;
     height: 15px;
@@ -177,16 +69,16 @@ section{
     margin-right: 22px;
     margin-bottom: 20px;
     margin-top: 20px;
-}
+} */
 .icons h1:hover{
     transform: scale(1.1);
     transition: .5s;
 }
-.btn-div{
+/* .btn-div{
     display: flex;
     justify-content: space-around;
-}
-.button{
+} */
+/* .button{
     display: inline-block;
     padding: 10px 20px;
     font-weight: 500;
@@ -205,15 +97,15 @@ section{
 .button:hover{
     transform: scale(1.05);
     background-color:#3d535f;
-}
-.home-image img{
+} */
+/* .home-image img{
     max-width: 100%;
     width: 540px;
     height: auto;
     border-radius: 50%;
     border:10px solid black;
-}
-
+} */
+/* 
 @media (max-width:1425px){
     section{
         padding:70px 3%;
@@ -230,8 +122,8 @@ section{
     .home{
         min-height: 80vh;
     }
-}
-@media (max-width:800px){
+} */
+/* @media (max-width:800px){
     .home{
         grid-template-columns:1fr;
         min-height: 130vh;
@@ -250,10 +142,10 @@ section{
     }
     section{
         /* padding:65% 3%; */
-        transition: .3s;
+        /* transition: .3s;
     }
-}
-
+} */
+/* 
 .html5{
     color: #e34c26;
 }
@@ -274,4 +166,4 @@ section{
 }
 .python{
     color: #306998;
-}
+} */
