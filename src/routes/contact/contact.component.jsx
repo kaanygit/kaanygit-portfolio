@@ -26,7 +26,17 @@ const Contact=()=>{
     };
 
     return(
-        <ContactDiv>{submitSuccess?(<MessageSubmit>Mesaj Gönderildi !😎</MessageSubmit>):(
+        <>
+            <div className='contact-page'>
+                {submitSuccess?(
+                    <span>Mesaj Gönderildi !😎</span>
+                ):(
+                    
+                )
+                }
+            </div>
+        </>
+        {/* <ContactDiv>{submitSuccess?(<MessageSubmit>Mesaj Gönderildi !😎</MessageSubmit>):(
             <ContactPage>
                 <ContactForm onSubmit={handleSubmit} style={{display:formVisible?'block':'none'}}>
                     <ContactPageLabel>
@@ -46,7 +56,7 @@ const Contact=()=>{
                 <Outlet/>
             </ContactPage>
             )}
-        </ContactDiv>
+        </ContactDiv> */}
     );
 }
 

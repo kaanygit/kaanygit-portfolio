@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const ProjectCardContainer=styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 350px;
-  align-items: center;
-  position: relative;
-`;
+// export const ProjectCardContainer=styled.div`
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   height: 350px;
+//   align-items: center;
+//   position: relative;
+// `;
 export const ImgUrl=styled.img`
   width: 100%;
   height: 95%;
@@ -50,33 +50,35 @@ export const WebLink=styled.span`
   font-weight:500;
 `;
 
-export const Footer=styled.div`
-  width: 100%;
-  height: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 20px;
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 0;
-`;
-
-export const ProjectName=styled.span`
-  font-size: 25px;
-  font-weight: 500;
-`;
 export const GithubLink=styled.h1`
   color: black;
   font-size: 50px;
-`;
+  `;
 export const WebsiteLink=styled.h1`
   color: #0a66c2;
   font-size: 50px;
-`;
-export const ReactIcon=styled.span`
-  color: #087ea4;
-  padding-right: 15px;
-  font-size: 20px;
-  padding-top: 10px;
-`;
+  `;
+
+
+// export const ReactIcon=styled.span`
+//   color: #087ea4;
+//   padding-right: 15px;
+//   font-size: 20px;
+//   padding-top: 10px;
+// `;
+// export const Footer=styled.div`
+//   width: 100%;
+//   height: 5%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   font-size: 20px;
+//   padding-left: 30px;
+//   padding-top: 20px;
+//   padding-bottom: 0;
+// `;
+
+// export const ProjectName=styled.span`
+//   font-size: 25px;
+//   font-weight: 500;
+// `;

@@ -6,7 +6,7 @@ import ProjectsCard from '../../components/projects_card/projects_card.component
 const Projets=()=>{
   const  {projects} =useContext(ProjectsContext);
   return (
-      <div className='projects-container grid overflow-hidden gap-x-10 gap-y-30 my-3 mx-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
+      <div className='projects-container grid overflow-hidden gap-x-10 gap-y-30 my-3 mx-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-16'>
         {projects.map((project)=>(
           <ProjectsCard key={project.id} project={project}/>
         ))}

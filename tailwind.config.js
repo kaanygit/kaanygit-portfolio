@@ -18,6 +18,11 @@ module.exports = {
         'redux-color':'#7E57C2',
         'php-color':'#777BB3',
         'python-color':'#306998',
+        'tailwind-color':'#087ea4',
+        'firebase-color':'#FFA611',
+        'mongodb-color':'#589636',
+        'nodejs-color':'#215732',
+        'typescript-color':'',
         'button-color':'#3d535f'
       },
       boxShadow:{
