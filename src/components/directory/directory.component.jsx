@@ -11,9 +11,9 @@ import { Fragment } from 'react';
 const Directory=()=>{
     return(
         <Fragment>
-            <section className='home justify-center items-center p-10 h-full border-box h-screen mx-auto w-full max-w-full md:text-base sm:text-xs'>
+            <section className='home justify-center items-center p-10 h-full border-box h-screen mx-auto w-full max-w-screen md:text-base sm:text-xs'>
                 <div className='flex home-page grid h-full lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 justify-center items-center'>
-                    <div className='justify-center items-center mx-auto whitespace-nowrap'>
+                    <div className='justify-center items-center mx-auto whitespace-nowrap '>
                         <div>
                             <h3 className='hello font-medium text-text-color-3 text-xl tracking-wider'>Hello 👋</h3>
                         </div>
