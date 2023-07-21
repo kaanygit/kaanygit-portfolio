@@ -1,27 +1,25 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import {Outlet} from 'react-router';
-import DeveloperPhoto from '../../assets/developerImage.jpg';
-import { Link } from 'react-router-dom';
+import developerPhoto from '../../assets/developerImage.jpg'
+
+const Contact:FC=()=>{
+    const [name, setName] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
+    const [formVisible, setFormVisible] = useState<boolean>(true);
+    const [message,setMessage]=useState<string>("");
+    const [submitSuccess, setSubmitSuccess] = useState<boolean>(false);
 
 
-const Contact=()=>{
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [formVisible, setFormVisible] = useState(true);
-    const [message,setMessage]=useState("");
-    const [submitSuccess, setSubmitSuccess] = useState(false);
-
-
-    const handleNameSubmit=(e)=>{
+    const handleNameSubmit=(e:React.ChangeEvent<HTMLInputElement>)=>{
         setName(e.target.value);
     };
-    const handleEmailSubmit=(e)=>{
+    const handleEmailSubmit=(e:React.ChangeEvent<HTMLInputElement>)=>{
         setEmail(e.target.value);
     };
-    const handleTextSubmit=(e)=>{
+    const handleTextSubmit=(e:React.ChangeEvent<HTMLTextAreaElement>)=>{
         setMessage(e.target.value);
     };
-    const handleSubmit=(e)=>{
+    const handleSubmit=(e:React.ChangeEvent<HTMLFormElement>)=>{
         e.preventDefault();
         setFormVisible(false);
         setSubmitSuccess(true);
@@ -51,14 +49,14 @@ const Contact=()=>{
                                 </div>
                                 <div className='w-full p-3'>
                                     <label className='label-box flex flex-col mt-3 text-xl'>
-                                        Message : <textarea className='w-full bg-gray-100 mt-3 p-2.5 text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400' minLength='15' placeholder='Send Message' value={message} onChange={handleTextSubmit} required/>
+                                        Message : <textarea className='w-full bg-gray-100 mt-3 p-2.5 text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400'  placeholder='Send Message' value={message} onChange={handleTextSubmit} required/>
                                     </label>
                                 </div>
                                 <button type='submit' className='submit-button-contact-page mt-3 py-2 px-4 bg-sky-600 rounded-xl font-medium text-white text-center w-full hover:bg-sky-700'>SEND</button>
                             </form>
                         </div>
                         <div>
-                            <img src={DeveloperPhoto} className='w-auto h-auto' alt='resim'/>
+                            <img src={developerPhoto} className='w-auto h-auto' alt='resim'/>
                         </div>
                     </div>
                 )

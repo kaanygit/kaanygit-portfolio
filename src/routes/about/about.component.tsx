@@ -1,5 +1,6 @@
+import { FC } from 'react';
 import {Outlet} from 'react-router';
-const About=()=>{
+const About:FC=()=>{
     return(
         <>
             <div className='about-page justify-center text-center items-center p-16 mx-0 my-auto'>

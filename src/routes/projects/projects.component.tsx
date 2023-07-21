@@ -1,10 +1,19 @@
-import { useContext } from 'react';
-import {ProjectsContext} from '../../context/project.context';
 import ProjectsCard from '../../components/projects_card/projects_card.component';
+import { useSelector } from 'react-redux';
+import {getProjects} from '../../redux/projects/projects.selector'
+import { FC } from 'react';
 
+interface ProjectTS{
+  id: number;
+  name: string;
+  imageUrl: string;
+  lang: string;
+  website: string;
+  githubLink: string;
+}
 
-const Projets=()=>{
-  const  {projects} =useContext(ProjectsContext);
+const Projets:FC=()=>{
+  const projects:ProjectTS[]=useSelector(getProjects);
   return (
       <div className='projects-container grid overflow-hidden gap-x-10 gap-y-30 my-3 mx-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-16'>
         {projects.map((project)=>(
