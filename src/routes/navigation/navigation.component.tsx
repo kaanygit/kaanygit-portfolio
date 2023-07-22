@@ -32,7 +32,6 @@ const Navigation:FC=()=>{
         setDarkmode(!darkmode);
         dispatch(setDarkMode(darkmode));
     }
-    console.log(isActive);
     return(
         <Fragment>
             <nav className='w-full bg-text-color-2 dark:bg-dark-color-1 overlow-hidden top-0 transition-all duration-500 ease shadow-xl  z-50 text-xl xl:p-9 lg:p-19 md:p-7 sm:p-5   transition duration-200 flex'>

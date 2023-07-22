@@ -7,10 +7,13 @@ import About from './routes/about/about.component';
 import ProjectsApi from './redux/projects/projects.api'
 
 import 'tailwindcss/tailwind.css';
+// import { addCollectionDocuments } from './utils/firebase/firebase.utils';
+// import {PROJECTS_DATA} from './projects'
 
 
 const App=()=>{
   ProjectsApi();
+  // addCollectionDocuments('projects',PROJECTS_DATA)
   return(
     <Routes>
       <Route path='/' element={<Navigation/>}>

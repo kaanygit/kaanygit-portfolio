@@ -6,7 +6,7 @@ export interface ProjectsData{
     id: number;
     name: string;
     imageUrl: string
-    lang:string;
+    lang:string[];
     website: string;
     githubLink: string;
 };

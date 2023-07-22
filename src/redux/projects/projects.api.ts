@@ -1,17 +1,18 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setProducts } from "./projetcs.action";
-import {getCollectionDocuments} from '../../utils/firebase/firebase.utils'
-import { ProjectsData } from "./projects.types";
+import { PROJECTS_DATA } from "../../projects";
+
+
 
 
 const ProjectsApi=()=>{
     const dispatch=useDispatch();
     useEffect(()=>{
         const getCategoriesMap=async()=>{
-           const categoryMap= await getCollectionDocuments();
-           const projectsMap=categoryMap.portfolioPage;
-           dispatch(setProducts(projectsMap));
+        //    const categoryMap= await getCollectionDocuments();
+           const projectsMap=PROJECTS_DATA;
+           dispatch(setProducts(PROJECTS_DATA));
         };
         getCategoriesMap();
     },[]);

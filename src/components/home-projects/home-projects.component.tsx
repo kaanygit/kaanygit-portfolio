@@ -1,10 +1,12 @@
-import { FC, useState } from "react";
+import { FC, } from "react";
 import { useSelector } from "react-redux";
 import { getProjects } from "../../redux/projects/projects.selector";
-import { Card,Typography,Button} from "@material-tailwind/react";
+import { Card,Typography} from "@material-tailwind/react";
 import { CardBody, CardFooter, CardHeader } from "@material-tailwind/react/components/Card";
 import { Link } from "react-router-dom";
 import {TbDots} from 'react-icons/tb'
+import { SiWebflow } from "react-icons/si";
+import { FiGithub } from "react-icons/fi";
 
 const HomeProjectsComponent:FC=()=>{
     const displayedProjects:number = 5;
@@ -32,9 +34,9 @@ const HomeProjectsComponent:FC=()=>{
                                             Hello, this is the details part of the application, I will fill in here very soon 😉
                                         </Typography>
                                     </CardBody>
-                                    <CardFooter className="justify-between flex w-full h-full">
-                                        <Button >Source Code</Button>
-                                        <Button>Demo</Button>
+                                    <CardFooter className="justify-evenly text-3xl flex w-full h-full">
+                                        <div ><Link to={`${project.website}`}><span className='text-blue-700'><SiWebflow/></span></Link></div>
+                                        <div><Link to={`${project.githubLink}`}><span className='text-black dark:text-text-color-4'><FiGithub/></span></Link></div>
                                     </CardFooter>
                                 </Card>
                             </div>

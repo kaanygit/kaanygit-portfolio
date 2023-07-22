@@ -1,14 +1,21 @@
-export const PROJECTS_DATA=[
-  {
-    portfolioPage:'PortfolioPageProjects',
-    projects:[
+
+type ProjectsData = {
+  id: number;
+  name: string;
+  imageUrl: string;
+  lang: string[];
+  website: string;
+  githubLink: string;
+};
+export const PROJECTS_DATA:ProjectsData[]=[ 
+
       {
         "id": 1,
-        "name": "Calculator",
+        "name": "DesignCorner.com",
         "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
-        "lang": ["react"],
-        "website": "https://www.google.com/",
-        "githubLink": "https://github.com/kaanygit/Calculator-React.Js"
+        "lang": ["react","tailwind","mongodb","nodejs","typescript"],
+        "website": "https://kaanygit.vercel.app/",
+        "githubLink": "https://github.com/kaanygit/DesignCorner.com/"
       },
       {
         "id": 2,
@@ -87,18 +94,16 @@ export const PROJECTS_DATA=[
         "id": 11,
         "name": "Portfolio-Page",
         "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
-        "lang": ["react","tailwind"],
+        "lang": ["react","tailwind","typescript","firebase"],
         "website": "https://kaanygit.vercel.app/",
         "githubLink": "https://github.com/kaanygit/kaanygit-portfolio"
       },
       {
         "id": 12,
-        "name": "DesignCorner.com",
+        "name": "Calculator",
         "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
-        "lang": ["react","tailwind","mongodb","nodejs","typescript"],
-        "website": "https://kaanygit.vercel.app/",
-        "githubLink": "https://github.com/kaanygit/DesignCorner.com/"
-      }
-    ]
-  }
+        "lang": ["react"],
+        "website": "https://www.google.com/",
+        "githubLink": "https://github.com/kaanygit/Calculator-React.Js"
+      },
 ]

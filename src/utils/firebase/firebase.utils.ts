@@ -20,7 +20,7 @@ const firebaseConfig:firebaseConfigTS ={
 };
 
 const app:FirebaseApp = initializeApp(firebaseConfig);
-const firestoreDB:Firestore=getFirestore();
+const firestoreDB:Firestore=getFirestore(app);
 
 export const addCollectionDocuments=async(collectionKey:string,objectsToAdd:any[])=>{
     const collectionRef=collection(firestoreDB,collectionKey);

@@ -11,7 +11,7 @@ export interface ProjectsTS{
     id: number;
     name: string;
     imageUrl: string;
-    lang: string;
+    lang: string[];
     website: string;
     githubLink: string;
 }
