@@ -2,19 +2,21 @@ import { FirebaseApp, initializeApp } from "firebase/app";
 import { getFirestore,doc,collection,writeBatch,query,getDocs, Firestore, QuerySnapshot, DocumentData, DocumentSnapshot } from 'firebase/firestore';
 
 
-const firebaseConfig ={
-    // apiKey: process.env.API_KEY,
-    // authDomain: process.env.AUTH_DOMAIN,
-    // projectId: process.env.PROJECT_ID,
-    // storageBucket: process.env.STORAGE_BUCKET,
-    // messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    // appId: process.env.DATABASE_URL,
-    apiKey: "AIzaSyCVn_TFlvWlD92DOryOhEFoGXUX183-wSA",
-    authDomain: "kaanygit-portfolio-page.firebaseapp.com",
-    projectId: "kaanygit-portfolio-page",
-    storageBucket: "kaanygit-portfolio-page.appspot.com",
-    messagingSenderId: "919975582875",
-    appId: "1:919975582875:web:7d4035e7ef51a9aa553a3e"    
+interface firebaseConfigTS{
+    apiKey:string | undefined;
+    authDomain:string | undefined;
+    projectId:string | undefined;
+    storageBucket:string | undefined;
+    messagingSenderId:string | undefined;
+    appId:string | undefined;
+}
+const firebaseConfig:firebaseConfigTS ={
+    apiKey: process.env.API_KEY,
+    authDomain:process.env.AUTH_DOMAIN,
+    projectId:process.env.PROJECT_ID,
+    storageBucket:process.env.STORAGE_BUCKET,
+    messagingSenderId:process.env.MESSAGING_SENDER_ID,
+    appId:process.env.DATABASE_URL, 
 };
 
 const app:FirebaseApp = initializeApp(firebaseConfig);

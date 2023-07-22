@@ -15,7 +15,7 @@ interface ProjectTS{
 const Projets:FC=()=>{
   const projects:ProjectTS[]=useSelector(getProjects);
   return (
-      <div className='projects-container grid overflow-hidden gap-x-10 gap-y-30 my-3 mx-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-16'>
+      <div className='projects-container grid overflow-hidden h-full w-full gap-10 gap-y-30  xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 p-16 dark:bg-dark-color-1 transition-all duration-500 ease dark:shadow-deneme'>
         {projects.map((project)=>(
           <ProjectsCard key={project.id} project={project}/>
         ))}

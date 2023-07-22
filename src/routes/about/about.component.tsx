@@ -3,7 +3,7 @@ import {Outlet} from 'react-router';
 const About:FC=()=>{
     return(
         <>
-            <div className='about-page justify-center text-center items-center p-16 mx-0 my-auto'>
+            <div className='about-page justify-center text-center items-center p-16 h-screen mx-0 my-auto transition-all duration-500 ease dark:bg-dark-color-1 dark:text-text-color-4 dark:shadow-deneme'>
                 <h1 className='about-heading font-bold text-5xl mb-3'>I'm Yasin Kaan Yigit</h1>
                 <hr className='mb-5'/>
                 <p className='mb-5 text-xl leading-6'>As a mathematics student at Ege University, I have always had a passion for problem-solving and critical thinking. Recently, I have become interested in the world of software development and have been working hard to develop my skills in this field.</p>
