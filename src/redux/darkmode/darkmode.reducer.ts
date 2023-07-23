@@ -11,7 +11,7 @@ type DarkModeAction = {
   };
 
 const initialState={
-    darkmode:false
+    darkmode:true
 }
 
 
