@@ -1,6 +1,8 @@
+import { ProviderStore } from '@/redux/provider'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { NavbarProvider } from '@/components/navbar/navbar-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ProviderStore>
+          <NavbarProvider/>
+          {children}  
+        </ProviderStore>
+      </body>
     </html>
   )
 }
