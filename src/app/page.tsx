@@ -1,3 +1,5 @@
+"use client"
+import { Button } from '@material-tailwind/react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -108,6 +110,7 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <Button>Test</Button>
     </main>
   )
 }
