@@ -1,26 +1,36 @@
-import { applyMiddleware, compose, createStore,Middleware } from "redux";
-import createSagaMiddleware from 'redux-saga';
-import logger from 'redux-logger';
-import persistedReducer from "./persist";
-import persistStore from "redux-persist/es/persistStore";
+import storage from "redux-persist/lib/storage"
+import logger from 'redux-logger'
+import {Middleware,combineReducers,applyMiddleware,compose,createStore} from 'redux'
+import { persistReducer } from "redux-persist"
+import persistStore from "redux-persist/es/persistStore"
+import startPageReducer from "./features/startPage/startPage-reducer"
 
+const rootReducer=combineReducers({
+    startPageReducer,
+});
 
+const persistConfig={
+    key:"root",
+    storage,
+}
+const persistedReducer=persistReducer(persistConfig,rootReducer);
 
 declare global{
     interface Window{
-        __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?:typeof compose
+        __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose
     }
 }
 
-const sagaMiddleware=createSagaMiddleware();
+const middleWares=[logger].filter((middleware):middleware is Middleware=>Boolean(middleware));
 
-const middleWares=[process.env.NODE_ENV!=='production'&&logger,sagaMiddleware].filter((middleware):middleware is Middleware =>Boolean(middleware));
-const composeEnchear=(process.env.NODE_ENV!=='production'&&window &&window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__)||compose;
-const composeEnchears=composeEnchear(applyMiddleware(...middleWares));
+const composeEnhancer = (process.env.NODE_ENV !== 'production' && window && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
-const store=createStore(persistedReducer,composeEnchears);
+const composeEnchancers=composeEnhancer(applyMiddleware(...middleWares));
+
+const store=createStore(persistedReducer,composeEnchancers);
 const persistor=persistStore(store);
 
-// sagaMiddleware.run(rootSaga);
+export {store,persistor};
 
-export {store,persistor}
+export type RootState=ReturnType<typeof store.getState>;
+export type AppDispatch=typeof store.dispatch;
