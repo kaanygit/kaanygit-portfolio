@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 
 dotenv.config();
 
-const mongodbURL=process.env.MONGO_DB_URL as string;
+const mongodbURL=process.env.MONGODB_URL as string;
 
 let connection:typeof mongoose
 
