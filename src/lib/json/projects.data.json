@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "name": "Calculator",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react"],
+      "website": "https://www.google.com/",
+      "githubLink": "https://github.com/kaanygit/Calculator-React.Js",
+      "description":"Your essential calculator for quick and easy math calculations"
+    },
+    {
+      "id": 2,
+      "name": "Recipe App",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react"],
+      "website": "https://www.google.com/",
+      "githubLink": "https://github.com/kaanygit/RecideApp-React.js",
+      "description":"Discover, cook, and enjoy delicious recipes with ease."
+    },
+    {
+      "id": 3,
+      "name": "ToDo App",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react"],
+      "website": "https://www.google.com/",
+      "githubLink": "https://github.com/kaanygit/react-todo-app",
+      "description":"Stay organized and manage tasks effortlessly with our Todo App."
+    },
+    {
+      "id": 4,
+      "name": "VividChat",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react","tailwind","nextjs","typescript","redux","mongodb"],
+      "website": "https://www.google.com/",
+      "githubLink": "https://github.com/kaanygit/VividChat",
+      "description":"Connect face-to-face with friends and colleagues using VividChat's seamless video chat experience."
+    },
+    {
+      "id": 5,
+      "name": "Harmoniyo",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react","tailwind","firebase"],
+      "website": "https://www.google.com/",
+      "githubLink": "https://github.com/kaanygit/harmoniyo",
+      "description":"Immerse yourself in the world of music with Harmoniyo – your gateway to endless melodies and rhythms."
+    },
+    {
+      "id": 6,
+      "name": "Weather Application",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react","tailwind"],
+      "website": "https://www.google.com/",
+      "githubLink": "https://github.com/kaanygit/weather-app-react",
+      "description":"Stay informed about the weather with our Weather App – your reliable source for up-to-date forecasts and conditions."
+    },
+    {
+      "id": 7,
+      "name": "QR Code",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react"],
+      "website": "https://qr-code-generator-ten-rho.vercel.app/",
+      "githubLink": "https://github.com/kaanygit/qr-code-generate",
+      "description":"Create QR codes easily with our QR Code Generator App – your go-to tool for sharing information seamlessly."
+    },
+    {
+      "id": 8,
+      "name": "Movie Review App",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react","tailwind"],
+      "website": "https://www.google.com/",
+      "githubLink": "https://www.google.com/",
+      "description":"Discover, rate, and read reviews for your favorite movies with our Movie Review App – your trusted source for cinematic insights."
+    },
+    {
+      "id": 9,
+      "name": "Password Generator App",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react"],
+      "website": "https://password-generator-gamma-lyart-59.vercel.app/",
+      "githubLink": "https://github.com/kaanygit/password-generator",
+      "description":"Generate strong and secure passwords effortlessly with our Password Generator App – your solution for online safety."
+    }
+    ,
+    {
+      "id": 10,
+      "name": "Portfolio-Page",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react","tailwind","nextjs","nodejs","mongodb","typescript"],
+      "website": "https://kaanygit.online",
+      "githubLink": "https://github.com/kaanygit/kaanygit-portfolio",
+      "description":"Explore my portfolio – a showcase of my work, skills, and creative journey in one place."
+    }
+    ,
+    {
+      "id": 11,
+      "name": "VocabQuest",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react","tailwind","nextjs","nodejs","mongodb","typescript","redux"],
+      "website": "https://vocab-quest.vercel.app/",
+      "githubLink": "https://github.com/kaanygit/VocabQuest/",
+      "description":"Expand your vocabulary and enhance your language skills with VocabQuest – your interactive journey to word mastery."
+    }
+    ,
+    {
+      "id": 12,
+      "name": "DesignCorner",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react","tailwind","nodejs","mongodb","typescript","redux"],
+      "website": "https://github.com/kaanygit/DesignCorner.com",
+      "githubLink": "https://github.com/kaanygit/DesignCorner.com",
+      "description":"Discover the perfect pieces to transform your space at DesignCorner – your destination for stylish and functional furniture shopping."
+    },
+    {
+      "id": 13,
+      "name": "MatIQr",
+      "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/588/103/desktop-wallpaper-best-4-software-developer-backgrounds-on-hip-software-engineer.jpg",
+      "lang": ["react","tailwind","nextjs","nodejs","mongodb","typescript","redux"],
+      "website": "https://math-i-qr.vercel.app/",
+      "githubLink": "https://github.com/kaanygit/MathIQr",
+      "description":"Master mathematics and unlock your potential with MatIQr – your interactive journey to mathematical excellence."
+    }    
+  ]

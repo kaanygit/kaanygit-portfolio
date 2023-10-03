@@ -11,7 +11,9 @@ module.exports = withMT({
   theme: {
     extend: {
       colors:{
-        'background-color-1':'#5d5ddd',
+        'background-color-1':'#efeeee',
+        'background-color-2':'#313130',
+        'background-color-3':'#acadac',
         'text-color-1':'#022b63',
         'text-color-2':'#fff',
         'text-color-3':'#3d535f',

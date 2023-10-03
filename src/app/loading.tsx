@@ -1,6 +1,6 @@
 "use client"
 import { LoadingComponent } from "@/components/export.components";
 
-function LoadingPage(){
+export default function LoadingPage(){
     return <LoadingComponent/>
 }
