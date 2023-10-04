@@ -1,0 +1,5 @@
+export enum PROJECT_DATA_TYPES{
+    SET_PROJECT_DATA="SET_PROJECT_DATA"
+}
+
+
