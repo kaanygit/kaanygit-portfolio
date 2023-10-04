@@ -4,9 +4,11 @@ import {Middleware,combineReducers,applyMiddleware,compose,createStore} from 're
 import { persistReducer } from "redux-persist"
 import persistStore from "redux-persist/es/persistStore"
 import startPageReducer from "./features/startPage/startPage-reducer"
+import projectReducer from "./features/projects/projects.reducer"
 
 const rootReducer=combineReducers({
     startPageReducer,
+    projectReducer
 });
 
 const persistConfig={

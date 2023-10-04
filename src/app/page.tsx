@@ -8,8 +8,10 @@ import {DiCss3Full, DiPython} from 'react-icons/di'
 import {FaPhp,FaReact} from 'react-icons/fa'
 import {SiRedux,SiCsharp} from 'react-icons/si'
 import {IoLogoJavascript} from 'react-icons/io'
+import { getProjectsData } from '@/redux/features/projects/fetch-projects-data'
 
 export default function Home() {
+  getProjectsData();
   const [showPageTransition,setShowPageTransition]=useState<boolean>(false);
 
   useEffect(()=>{
