@@ -1,15 +1,14 @@
-import mongoose from 'mongoose'
-import dotenv from 'dotenv'
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
 dotenv.config();
+const url=process.env.MONGODB_URL as string;
 
-const mongodbURL=process.env.MONGODB_URL as string;
-
-let connection:typeof mongoose
+let connection:typeof mongoose;
 
 const startDatabase=async()=>{
-    if(!connection)connection=await mongoose.connect(mongodbURL);
+    if(!connection)connection=await mongoose.connect(url);
     return connection;
 };
 
-export default startDatabase
+export default startDatabase;
