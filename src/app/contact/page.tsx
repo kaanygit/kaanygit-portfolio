@@ -38,12 +38,24 @@ const ContactPage:React.FC=()=>{
             message:textAreaElement
         }))
     }
-    const formSubmit=(e:React.ChangeEvent<HTMLFormElement>)=>{
+    const formSubmit=async(e:React.ChangeEvent<HTMLFormElement>)=>{
         e.preventDefault();
         try {
            console.log("Veri Gönderildi"); 
            console.log(formValue);
-           setMessageSendSuccess(true);
+            const response=await fetch("/api/message",{
+                method:"POST",
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify(formValue)
+            });
+            if(response.ok){
+                console.log("Mesaj Gönderildi");
+                setMessageSendSuccess(true);
+            }else{
+                console.error("Mesaj gönderilirken bir hata oluştu");
+            }
         } catch (error) {
             console.log("Veri Gönderilirken Hata Oluştu : ",error);
         }
