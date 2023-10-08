@@ -15,16 +15,16 @@ import {
   } from "@material-tailwind/react";
 
 export {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button,
-    Tooltip,
-    IconButton,
-    Menu,
-    MenuHandler,
-    MenuItem,
-    MenuList 
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+  Tooltip,
+  IconButton,
+  Menu,
+  MenuHandler,
+  MenuItem,
+  MenuList 
   }
