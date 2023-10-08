@@ -7,8 +7,7 @@ import startPageReducer from "./features/startPage/startPage-reducer"
 import projectReducer from "./features/projects/projects.reducer"
 
 const rootReducer=combineReducers({
-    startPageReducer,
-    projectReducer
+   projectReducer,
 });
 
 const persistConfig={
