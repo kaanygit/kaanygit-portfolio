@@ -92,7 +92,7 @@ return(
                 </div>
             </div>
         </section>
-    </Transition>:<div className="p-24 flex mx-auto w-full h-screen justify-center items-center text-center text-background-color-2 text-5xl font-bold">Send Message to Succesfull 😎</div>
+    </Transition>:<div className="p-24 flex mx-auto w-full h-screen justify-center items-center text-center text-background-color-2 dark:text-background-color-1 text-5xl font-bold">Send Message to Succesfull 😎</div>
 )
 }
 

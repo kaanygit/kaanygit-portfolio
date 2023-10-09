@@ -28,13 +28,15 @@ const Navbar:React.FC=({params}:any)=>{
         setShowPageTransition(true);
     },[])
 
-    useEffect(()=>{
-        if(darkmodeSelector===true){
+    useEffect(() => {
+        if (darkmodeSelector === true) {
             document.documentElement.classList.add('dark');
-        }else{
+            document.body.style.backgroundColor = '#0F1624'; // Dark mode için arka plan rengi
+        } else {
             document.documentElement.classList.remove('dark');
+            document.body.style.backgroundColor = '#efeeee'; // Light mode için arka plan rengi
         }
-    },[darkmodeSelector])
+    }, [darkmodeSelector]);
 
 
     console.log(darkmodeSelector);
