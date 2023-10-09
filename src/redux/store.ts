@@ -3,12 +3,12 @@ import logger from 'redux-logger'
 import {Middleware,combineReducers,applyMiddleware,compose,createStore} from 'redux'
 import { persistReducer } from "redux-persist"
 import persistStore from "redux-persist/es/persistStore"
-import startPageReducer from "./features/startPage/startPage-reducer"
 import projectReducer from "./features/projects/projects.reducer"
+import darkModeReducer from "./features/darkmode/darkmode.reducer"
 
 const rootReducer=combineReducers({
-    startPageReducer,
-    projectReducer
+    projectReducer,
+    darkModeReducer
 });
 
 const persistConfig={
