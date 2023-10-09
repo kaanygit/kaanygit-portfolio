@@ -1,8 +1,6 @@
-
 "use client"
+import { LoadingComponent } from "@/components/export.components";
 
-import { LoadingComponent } from "@/components/export.components"
-
-export default function LoadingPage(){
+export default function LoadingPageProject(){
     return <LoadingComponent/>
 }
